@@ -56,6 +56,39 @@ body > #header,
     background-color: var(--middle);
 }
 
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: var(--main-text);
+    background-color: var(--darkest);
+}
+
+.navbar-default .navbar-nav > li > a {
+    transition: .1s;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--main-text);
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: var(--lightest);
+    border-color: var(--lightest);
+}
+
+.dropdown-menu .divider {
+    background-color: var(--darkest);
+}
+
+.dropdown-submenu > a:after {
+    color: var(--lightest);
+}
+
+.dropdown-submenu:hover > a:after {
+    color: var(--darkest);
+}
+
 #notebook-container,
 .notebook_app > #header {
     box-shadow: none;
@@ -103,8 +136,7 @@ span#login_widget > .button, #logout, #shutdown,
     background-color: var(--lightest);
 }
 
-div.output_prompt,
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+div.output_prompt {
     color: var(--important);
 }
 
