@@ -1,0 +1,333 @@
+/*This file contains any manual css for this page that needs to override the global styles.
+This is only required when different pages style the same element differently. This is just
+a hack to deal with our current css styles and no new styling should be added in this file.*/
+
+#ipython-main-app {
+    position: relative;
+}
+#jupyter-main-app {
+    position: relative;
+}
+
+:root {
+    /* Colors for elements */
+    --lightest: #3F3F3F;
+    --middle: #2D2D2D;
+    --darkest: #1F1F1F;
+    /* Text colors */
+    --main-text: #d4d4d4;
+    --links: #258ae2;
+    --matching-bracket-color: #fff;
+    --selected-text-color: #d4d4d4;
+    /* Other */
+    --important: #F37726;
+    --warning-bg: rgb(243, 120, 38, 0.85);
+    --input-area: #1F1F1F;
+    --selected-cell-border: #ababab;
+    --matching-bracket-border-color: #888888; /* Set it to rgba(0, 0, 0, 0) if don't need border */
+    --selected-text-background: rgba(255, 255, 255, 0.15);
+    /* Code theme */
+    --cursor-color: #d4d4d4;
+    --code-variables: #d4d4d4;
+    --code-properties: #9AE22B;
+    --code-def: #9AE22B; /* Color of function and class names */
+    --code-keywords: #F92665; /* for, if, return, etc */
+    --code-operators: #F92665; /* =, <, >, etc */
+    --code-builtin: #66D9EF; /* len, range, etc */
+    --code-numbers: #A181F1;
+    --code-strings: #DADB67;
+    --code-comments:  #88846F;
+    --code-self: #DB971F;
+}
+
+/* Jupyter editor */
+body {
+    background-color: var(--darkest);
+}
+
+div.output_stderr {
+    background-color: var(--warning-bg);
+}
+
+body > #header,
+.terminal-app #header,
+.navbar-default,
+#notebook-container {
+    background-color: var(--middle);
+}
+
+#notebook-container,
+.notebook_app > #header {
+    box-shadow: none;
+}
+
+.notebook_app > #header {
+    border-bottom: 1px solid var(--darkest);
+}
+
+body > #header .header-bar,
+#site {
+    background-color: var(--darkest);
+}
+
+.navbar-default {
+    border-color: var(--darkest);
+}
+
+#header,
+.navbar-default .navbar-nav > li > a,
+span#login_widget > .button, #logout, #shutdown,
+.form-control,
+.btn,
+p,
+h1,
+div.input_prompt,
+div.output_area pre {
+    color: var(--main-text);
+}
+
+span#login_widget > .button, #logout, #shutdown,
+.form-control,
+.btn {
+    background-color: var(--lightest);
+}
+
+div.output_prompt,
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: var(--important);
+}
+
+
+a {
+    color: var(--links);
+}
+
+.div.cell.selected, div.cell.selected.jupyter-soft-selected {
+    border-color: var(--input-area);
+}
+
+div.cell.selected:before, div.cell.selected.jupyter-soft-selected:before {
+    background-color: var(--selected-cell-border);
+}
+
+div.cell.selected, div.cell.selected.jupyter-soft-selected {
+    border-color: var(--selected-cell-border);
+}
+
+.edit_mode div.cell.selected:before {
+    background-color: var(--important);
+}
+
+.edit_mode div.cell.selected {
+    border-color: var(--important);
+}
+
+.btn-default, .form-control, #logout, .notification_widget {
+    border-color: var(--lightest);
+}
+
+/* Jupyter explorer */
+
+#shutdown {
+    border-color: var(--lightest);
+}
+
+.dynamic-instructions,
+.toolbar_info,
+.tab-pane {
+    color: var(--main-text);
+}
+
+
+
+/* Tabs */
+.nav-tabs > li > a {
+    color: var(--lightest);
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: var(--darkest);
+    border-color: var(--lightest);
+    border-bottom-color: transparent;
+    color: var(--main-text);
+}
+
+.nav-tabs {
+    border-bottom-color: var(--lightest);
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: var(--lightest);
+    border-color: var(--lightest);
+    color: var(--main-text);
+}
+
+/* Files and folders list */
+.list_header {
+    background-color: var(--middle);
+}
+
+.list_container > div,
+.list_container {
+    border-color: var(--lightest);
+}
+
+.running_notebook_icon:before,
+.item_buttons .running-indicator {
+    color: var(--important);
+}
+.item_name,
+.breadcrumb a {
+    color: var(--main-text);
+}
+
+.list_item:hover {
+    background-color: var(--middle);
+}
+
+.btn-default:hover {
+    background-color: var(--important);
+    border-color: var(--important);
+}
+
+.dropdown-menu {
+    background-color: var(--middle);
+}
+
+.dropdown-menu > li > a {
+    color: var(--main-text);
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color: var(--lightest);
+    color: var(--main-text);
+}
+
+/* Running tab */
+#running .panel-group .panel .panel-heading {
+    background-color: var(--middle);
+}
+
+.panel-heading a {
+    color: var(--main-text);
+}
+
+.panel-default {
+    border-color: var(--lightest);
+}
+
+.list_container .list_item,
+.list_container .list_placeholder {
+    background-color: var(--darkest);
+}
+
+.btn-warning {
+    background-color: var(--important);
+    color: #fff;
+}
+
+
+/* Cels styles */
+div.input_area {
+    background-color: var(--middle);
+    border-color: var(--lightest);
+}
+
+/* Code stules */
+.CodeMirror pre.CodeMirror-line, 
+.CodeMirror pre.CodeMirror-line-like,
+.CodeMirror {
+    color: var(--code-variables); 
+}
+
+.CodeMirror-cursor {
+    border-left: 2px solid var(--cursor-color);
+}
+
+.cm-s-ipython span.cm-variable {
+    color: var(--code-variables);
+}
+
+.cm-s-ipython span.cm-property {
+    color: var(--code-properties);
+}
+
+.cm-s-ipython span.cm-def {
+    color: var(--code-def);
+}
+
+.cm-s-ipython span.cm-operator {
+    color: var(--code-operators);
+}
+
+.cm-s-ipython span.cm-keyword {
+    color: var(--code-keywords);
+}
+
+.cm-s-ipython span.cm-builtin {
+    color: var(--code-builtin);
+}
+
+.cm-s-ipython span.cm-number {
+    color: var(--code-numbers);
+}
+
+.cm-s-ipython span.cm-string {
+    color: var(--code-strings);
+}
+.cm-s-ipython span.cm-comment {
+    color: var(--code-comments);
+}
+.cm-s-ipython span.cm-variable-2 {
+    color: var(--code-self);
+}
+
+.cm-s-ipython .CodeMirror-matchingbracket { 
+    color: var(--matching-bracket-color) !important;
+    border: 1px solid var(--matching-bracket-border-color);
+    border-top: none;
+    border-bottom: none;
+    position: relative;
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+.cm-s-ipython .CodeMirror-matchingbracket::before, 
+.cm-s-ipython .CodeMirror-matchingbracket::after {
+    content: '';
+    background-color: var(--matching-bracket-border-color);
+    left: -1px;
+    right: -1px;
+    display: block;
+    height: 1px;
+    position: absolute;
+}
+
+.cm-s-ipython .CodeMirror-matchingbracket::before {
+    top: 0;
+}
+
+.cm-s-ipython .CodeMirror-matchingbracket::after {
+    bottom: -1px;
+}
+
+/* Completions */
+.completions {
+    box-shadow: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.completions select {
+    background-color: var(--lightest);
+    color: var(--main-text);
+}
+
+.completions select option {
+    padding: 2px 4px 3px 4px;
+}
+
+.cm-s-ipython div.CodeMirror-selected {
+    background-color: var(--selected-text-background);
+    color: var(--selected-text-color);
+}
