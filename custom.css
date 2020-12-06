@@ -196,9 +196,14 @@ div.cell.selected, div.cell.selected.jupyter-soft-selected {
     background-color: var(--middle);
 }
 
+.btn {
+    transition: .1s;
+}
+
 .btn-default:hover {
     background-color: var(--important);
     border-color: var(--important);
+    color: #fff;
 }
 
 .dropdown-menu {
