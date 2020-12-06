@@ -62,7 +62,18 @@ body > #header,
 }
 
 .notebook_app > #header {
-    border-bottom: 1px solid var(--darkest);
+    position: relative;
+}
+
+.notebook_app > #header::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    height: 1px;
+    bottom: 0;
+    background-color: var(--darkest);
 }
 
 body > #header .header-bar,
