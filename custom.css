@@ -532,3 +532,40 @@ div.typeahead__container {
 .close {
     text-shadow: none;
 }
+
+/* Plain text editor */
+#texteditor-backdrop {
+    background-color: var(--darkest);   
+}
+
+.edit_app #header {
+    box-shadow: none;
+}
+
+#texteditor-backdrop #texteditor-container {
+    background-color: var(--middle);
+    box-shadow: none;
+}
+
+#texteditor-backdrop #texteditor-container .CodeMirror-gutter, 
+#texteditor-backdrop #texteditor-container .CodeMirror-gutters {
+    background-color: transparent;
+}
+
+
+.CodeMirror-dialog {
+    background-color: var(--middle);
+    border-bottom-color: var(--darkest);
+}
+
+.CodeMirror-dialog button {
+    background-color: var(--lightest);
+    border: none;
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+
+.CodeMirror-dialog button:focus {
+    outline: 2px solid var(--darkest);
+    /* border: 2px solid var(--darkest); */
+}
