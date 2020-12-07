@@ -1,15 +1,4 @@
-/*This file contains any manual css for this page that needs to override the global styles.
-This is only required when different pages style the same element differently. This is just
-a hack to deal with our current css styles and no new styling should be added in this file.*/
-
-#ipython-main-app {
-    position: relative;
-}
-
-#jupyter-main-app {
-    position: relative;
-}
-
+/* Theme settings */
 :root {
     /* Colors for elements */
     --lightest: #3F3F3F;
@@ -45,6 +34,15 @@ a hack to deal with our current css styles and no new styling should be added in
     --code-comments: #88846F;
     --code-self: #DB971F;
 }
+
+#ipython-main-app {
+    position: relative;
+}
+
+#jupyter-main-app {
+    position: relative;
+}
+
 
 /* Jupyter editor */
 body {
