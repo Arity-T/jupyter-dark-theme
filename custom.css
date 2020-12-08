@@ -1,4 +1,15 @@
-/* Theme settings */
+/*This file contains any manual css for this page that needs to override the global styles.
+This is only required when different pages style the same element differently. This is just
+a hack to deal with our current css styles and no new styling should be added in this file.*/
+
+#ipython-main-app {
+    position: relative;
+}
+
+#jupyter-main-app {
+    position: relative;
+}
+
 :root {
     /* Colors for elements */
     --lightest: #3F3F3F;
@@ -35,18 +46,14 @@
     --code-self: #DB971F;
 }
 
-#ipython-main-app {
-    position: relative;
-}
-
-#jupyter-main-app {
-    position: relative;
-}
-
-
 /* Jupyter editor */
 body {
     background-color: var(--darkest) !important;
+    color: var(--main-text);
+}
+
+div.text_cell_render,
+div.output_text {
     color: var(--main-text);
 }
 
@@ -58,6 +65,14 @@ body {
 
 div.output_stderr {
     background-color: var(--warning-bg);
+}
+
+div.output_area div.output_stderr pre {
+    color: var(--darkest);
+}
+
+div.output_area div.output_stderr a {
+    color: #002bff;
 }
 
 body>#header,
@@ -567,3 +582,25 @@ div.typeahead__container {
     outline: 2px solid var(--darkest);
     /* border: 2px solid var(--darkest); */
 }
+
+/* Data frames */
+.rendered_html thead {
+    border-bottom-color: var(--darkest);
+}
+
+.rendered_html thead tr {
+    color: var(--main-text);
+}
+
+.rendered_html tbody tr {
+    color: var(--main-text);
+}
+
+.rendered_html tbody tr:nth-child(odd) {
+    background-color: var(--lightest);
+}
+
+.rendered_html tbody tr:nth-child(even) {
+    background-color: var(--middle);
+} 
+
