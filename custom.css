@@ -423,6 +423,8 @@ div.input_area {
     box-shadow: none;
     border: none;
     border-radius: 4px;
+    background-color: var(--lightest) !important;
+    color: var(--main-text) !important;
 }
 
 .completions select {
@@ -439,6 +441,11 @@ div.input_area {
     color: var(--selected-text-color);
 }
 
+.complete-container[style^="background"] {
+    background-color: var(--important) !important;
+    color: #fff;
+}
+
 /* Keyboard shortcuts menu */
 .modal-content {
     background-color: var(--middle);
@@ -450,7 +457,7 @@ div.input_area {
     border-color: var(--darkest);
 }
 
-#find-and-replace #replace-preview .match, 
+#find-and-replace #replace-preview .match,
 #find-and-replace #replace-preview .insert {
     background-color: var(--selected-text-background);
     border-color: var(--selected-text-background);
@@ -510,7 +517,7 @@ div.typeahead__container {
 }
 
 .typeahead__list>li,
-.typeahead__list>.typeahead__group  {
+.typeahead__list>.typeahead__group {
     border-color: var(--darkest) !important;
 }
 
@@ -548,7 +555,7 @@ div.typeahead__container {
 
 /* Plain text editor */
 #texteditor-backdrop {
-    background-color: var(--darkest);   
+    background-color: var(--darkest);
 }
 
 .edit_app #header {
@@ -560,7 +567,7 @@ div.typeahead__container {
     box-shadow: none;
 }
 
-#texteditor-backdrop #texteditor-container .CodeMirror-gutter, 
+#texteditor-backdrop #texteditor-container .CodeMirror-gutter,
 #texteditor-backdrop #texteditor-container .CodeMirror-gutters {
     background-color: transparent;
 }
@@ -602,5 +609,72 @@ div.typeahead__container {
 
 .rendered_html tbody tr:nth-child(even) {
     background-color: var(--middle);
-} 
+}
 
+/* Tooltips */
+.ipython_tooltip {
+    background-color: var(--lightest);
+    color: var(--main-text);
+    box-shadow: none;
+    border-color: var(--darkest);
+}
+
+.ipython_tooltip .tooltiptext pre {
+    background-color: var(--lightest);
+    color: var(--main-text);
+}
+
+.ansi-red-intense-fg {
+    color: var(--important);
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    background: var(--middle);
+    border-color: var(--darkest);
+}
+
+.pretooltiparrow:before {
+    background-color: var(--lightest);
+    border-color: var(--darkest);
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+    border-color: var(--important);
+    color: var(--main-text) !important;
+    background: var(--important);
+}
+
+div#pager {
+    background-color: var(--middle);
+}
+
+div#pager pre {
+    color: var(--main-text);
+    background-color: var(--darkest);
+    border-color: var(--lightest);
+}
+
+.ansi-blue-intense-fg {
+    color: var(--code-strings);
+}
+
+.ansi-cyan-intense-fg {
+    color: var(--code-numbers);
+}
+
+div#pager .ui-resizable-handle {
+    background-color: var(--lightest);
+    border-color: var(--lightest);
+}
