@@ -436,6 +436,10 @@ div.input_area {
     padding: 2px 4px 3px 4px;
 }
 
+.completions select option.context {
+    color: var(--main-text);
+}
+
 .cm-s-ipython div.CodeMirror-selected {
     background-color: var(--selected-text-background);
     color: var(--selected-text-color);
