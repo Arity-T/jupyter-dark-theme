@@ -13,4 +13,6 @@ It goes well with the [dark version of chrome](https://chrome.google.com/webstor
 
 1. In this directory create a `custom` subfolder if it doesn't exist.
 1. Paste file `custom.css` there.
-1. Update Jupyter Notebook
+1. Update Jupyter Notebook (`ctrl + f5` to refresh css)
+
+Also note, if you are already using theme from [jupyter-themes](https://github.com/dunovank/jupyter-themes) run command `jt -r` to return default theme and only then install this one :wink:
