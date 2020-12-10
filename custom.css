@@ -17,7 +17,7 @@ a hack to deal with our current css styles and no new styling should be added in
     --darkest: #1F1F1F;
     /* Text colors */
     --main-text: #d4d4d4;
-    --links: #258ae2;
+    --links: #1e96ff;
     --matching-bracket-color: #fff;
     --selected-text-color: #d4d4d4;
     /* Other */
@@ -44,6 +44,13 @@ a hack to deal with our current css styles and no new styling should be added in
     --code-strings: #DADB67;
     --code-comments: #88846F;
     --code-self: #DB971F;
+    /* Markdown */
+    --md-title: #F37726;
+    --md-tag: #9AE22B;
+    --md-string: #F92665;
+    --md-var-two: #d4d4d4;
+    --md-comment: #F37726;
+    --md-builtin: #A181F1;
 }
 
 /* Jupyter editor */
@@ -174,7 +181,7 @@ div.output_prompt {
 }
 
 
-a {
+a, a:hover, a:focus {
     color: var(--links);
 }
 
@@ -681,4 +688,35 @@ div#pager pre {
 div#pager .ui-resizable-handle {
     background-color: var(--lightest);
     border-color: var(--lightest);
+}
+
+/* Mardown */
+.cm-s-default .cm-header {
+    color: var(--important);
+}
+
+.cm-s-default .cm-variable-2,
+.cm-s-default .cm-link {
+    color: var(--md-var-two);
+}
+
+.cm-s-default .cm-string {
+    color: var(--md-string);
+}
+
+.cm-s-default .cm-builtin {
+    color: var(--md-builtin);
+}
+
+.cm-s-default .cm-comment {
+    color: var(--md-comment);
+}
+
+.cm-s-default .cm-tag {
+    color: var(--md-tag);
+}
+
+.rendered_html code {
+    background-color: var(--lightest);
+    color: var(--main-text);
 }
