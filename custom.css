@@ -64,6 +64,12 @@ div.output_text {
     color: var(--main-text);
 }
 
+div.cell.jupyter-soft-selected {
+    border-left-color: var(--important);
+    border-right-color: var(--important);
+    background: var(--lightest);
+}
+
 .CodeMirror-gutters {
     background-color: transparent;
     color: var(--main-text);
