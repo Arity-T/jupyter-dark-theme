@@ -89,6 +89,10 @@ body>#header,
     background-color: var(--middle);
 }
 
+span.save_widget span.filename:hover {
+    background-color: var(--lightest);
+}
+
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus {
