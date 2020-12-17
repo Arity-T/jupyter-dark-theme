@@ -457,14 +457,16 @@ div.input_area {
     color: var(--main-text);
 }
 
-.cm-s-ipython div.CodeMirror-selected {
-    background-color: var(--selected-text-background);
-    color: var(--selected-text-color);
-}
-
 .complete-container[style^="background"] {
     background-color: var(--important) !important;
     color: #fff;
+}
+
+/* Selected text and completion color */
+.text_cell div.CodeMirror-selected,
+.cm-s-ipython div.CodeMirror-selected {
+    background-color: var(--selected-text-background);
+    color: var(--selected-text-color);
 }
 
 /* Keyboard shortcuts menu */
