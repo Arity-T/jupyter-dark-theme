@@ -622,6 +622,7 @@ div.typeahead__container {
 
 .rendered_html tbody tr {
     color: var(--main-text);
+    transition: .2s;
 }
 
 .rendered_html tbody tr:nth-child(odd) {
@@ -630,6 +631,10 @@ div.typeahead__container {
 
 .rendered_html tbody tr:nth-child(even) {
     background-color: var(--middle);
+}
+
+.rendered_html tbody tr:hover {
+    background-color: var(--darkest);
 }
 
 /* Tooltips */
