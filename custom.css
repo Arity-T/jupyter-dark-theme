@@ -46,8 +46,10 @@ a hack to deal with our current css styles and no new styling should be added in
     --code-self: #DB971F;
     /* Markdown */
     --md-title: #F37726;
-    --md-tag: #9AE22B;
-    --md-string: #F92665;
+    --md-tag: #F92665;
+    --md-tag-bracket: #d4d4d4;
+    --md-attribute: #9AE22B;
+    --md-string: #DADB67;
     --md-var-two: #d4d4d4;
     --md-comment: #F37726;
     --md-builtin: #A181F1;
@@ -463,9 +465,10 @@ div.input_area {
 }
 
 /* Selected text and completion color */
+div.CodeMirror-selected,
 .text_cell div.CodeMirror-selected,
 .cm-s-ipython div.CodeMirror-selected {
-    background-color: var(--selected-text-background);
+    background-color: var(--selected-text-background) !important;
     color: var(--selected-text-color);
 }
 
@@ -731,6 +734,14 @@ div#pager .ui-resizable-handle {
 
 .cm-s-default .cm-tag {
     color: var(--md-tag);
+}
+
+.cm-s-default .cm-bracket {
+    color: var(--md-tag-bracket);
+}
+
+.cm-s-default .cm-attribute {
+    color: var(--md-attribute);
 }
 
 .rendered_html code {
