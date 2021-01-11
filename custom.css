@@ -744,7 +744,9 @@ div#pager .ui-resizable-handle {
     color: var(--md-attribute);
 }
 
-.rendered_html code {
-    background-color: var(--lightest);
+.rendered_html code,
+.rendered_html pre,
+.rendered_html pre code {
+    background-color: var(--middle);
     color: var(--main-text);
 }
