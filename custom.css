@@ -59,6 +59,11 @@ a hack to deal with our current css styles and no new styling should be added in
 body {
     background-color: var(--darkest) !important;
     color: var(--main-text);
+    overflow: hidden;
+}
+
+#kernel_indicator .kernel_indicator_name {
+    color: var(--main-text);
 }
 
 div.text_cell_render,
